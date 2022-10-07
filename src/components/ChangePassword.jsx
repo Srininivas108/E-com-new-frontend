@@ -38,7 +38,7 @@ const ChangePassword = () => {
             if(newPassword === rNewPassword) {
                 try {
 
-                    const {data} = await axios.put('http://localhost:5000/api/users/update', {
+                    const {data} = await axios.put('https://ecom-new-backend.herokuapp.com/api/users/update', {
                         _id: userInfo._id,
                         newPassword
                     });
