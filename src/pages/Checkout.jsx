@@ -25,7 +25,7 @@ const Checkout = ({setOpen, cartItems, subTotal, taxPrice, totalPrice}) => {
 
         try {
 
-            const {data} = await axios.post('https://ecom-new-backend.herokuapp.com/api/orders/', {
+            const {data} = await axios.post('https://ecom-app-backendd.herokuapp.com/api/orders/', {
 
                 orderItems: cartItems,
                 userId: userId,

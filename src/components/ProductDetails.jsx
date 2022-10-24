@@ -28,7 +28,7 @@ const ProductDetails = () => {
     useEffect(() => {
 
         const fetchData = async() => {
-            const resultProduct = await axios.get(`https://ecom-new-backend.herokuapp.com/api/products/${id}`);
+            const resultProduct = await axios.get(`https://ecom-app-backendd.herokuapp.com/api/products/${id}`);
             //console.log(resultProduct.data);
             setProduct(resultProduct.data);
         }

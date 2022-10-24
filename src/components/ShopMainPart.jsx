@@ -90,7 +90,7 @@ const ShopMainPart = () => {
 
         //fetch all products from db
         const fetchData = async() => {
-            const resultProducts = await axios.get('https://ecom-new-backend.herokuapp.com/api/products/all');
+            const resultProducts = await axios.get('https://ecom-app-backendd.herokuapp.com/api/products/all');
 
             const resultProductsData = resultProducts.data;
 
@@ -101,17 +101,17 @@ const ShopMainPart = () => {
             setProducts(sortResultProductsData);
 
             //fetch all category
-            const resultCategory = await axios.get('https://ecom-new-backend.herokuapp.com/api/category/all');
+            const resultCategory = await axios.get('https://ecom-app-backendd.herokuapp.com/api/category/all');
             console.log(resultCategory.data);
             setCategory(resultCategory.data);
 
             //fetch all ratings
-            const resultRating= await axios.get('https://ecom-new-backend.herokuapp.com/api/rating/all');
+            const resultRating= await axios.get('https://ecom-app-backendd.herokuapp.com/api/rating/all');
             console.log(resultRating.data);
             setRating(resultRating.data);
 
             //fetch all subcategory
-            const resultSubCategory = await axios.get('https://ecom-new-backend.herokuapp.com/api/subcategory/all');
+            const resultSubCategory = await axios.get('https://ecom-app-backendd.herokuapp.com/api/subcategory/all');
             console.log(resultSubCategory.data);
 
             const resultSubCategoryData = resultSubCategory.data;

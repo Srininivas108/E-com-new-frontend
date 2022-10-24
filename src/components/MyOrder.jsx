@@ -19,7 +19,7 @@ const MyOrder = () => {
         const fetchData = async() => {
             try {
 
-                const {data} = await axios.get(`https://ecom-new-backend.herokuapp.com/api/orders/${id}`);
+                const {data} = await axios.get(`https://ecom-app-backendd.herokuapp.com/api/orders/${id}`);
                 console.log(data);
                 setOrder(data);
     

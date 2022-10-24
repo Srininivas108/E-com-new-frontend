@@ -23,7 +23,7 @@ const BlogLists = () => {
     useEffect(() => {
 
         const fetchData = async() => {
-            const resultBlog = await axios.get('https://ecom-new-backend.herokuapp.com/api/blogs/all');
+            const resultBlog = await axios.get('https://ecom-app-backendd.herokuapp.com/api/blogs/all');
             // i want the latest blogs to show
 
             const resultBlogData = resultBlog.data;

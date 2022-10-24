@@ -17,7 +17,7 @@ const BlogDetails = () => {
     useEffect(() => {
 
         const fetchData = async() => {
-            const resultBlog = await axios.get(`https://ecom-new-backend.herokuapp.com/api/blogs/${id}`);
+            const resultBlog = await axios.get(`https://ecom-app-backendd.herokuapp.com/api/blogs/${id}`);
             console.log(resultBlog.data);
             setBlog(resultBlog.data);
         }

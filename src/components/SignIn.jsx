@@ -17,7 +17,7 @@ const SignIn = () => {
         
         try {
 
-            const {data} = await axios.post('https://ecom-new-backend.herokuapp.com/api/users/login', {
+            const {data} = await axios.post('https://ecom-app-backendd.herokuapp.com/api/users/login', {
                 email,
                 password
             });

@@ -9,7 +9,7 @@ const NewProducts = () => {
     useEffect(() => {
 
         const fetchData = async() => {
-            const resultProducts = await axios.get('https://ecom-new-backend.herokuapp.com/api/products/all');
+            const resultProducts = await axios.get('https://ecom-app-backendd.herokuapp.com/api/products/all');
             console.log(resultProducts.data);
             setProducts(resultProducts.data);
         }
